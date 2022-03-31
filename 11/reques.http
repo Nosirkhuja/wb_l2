@@ -1,0 +1,13 @@
+POST http://localhost:8080/create_event HTTP/1.1
+Content-Type: application/json
+
+{
+  "id_user": 1,
+  "header": "Доделать l2",
+  "event": "Доделать все работы и сдать их",
+  "time": "2022-04-01"
+}
+
+###
+
+GET http://localhost:8080/events_for_day?id_user=1&data=2022-04-01 HTTP/1.1
